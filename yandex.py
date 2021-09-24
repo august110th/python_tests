@@ -14,7 +14,7 @@ class NewFolder:
 
     def folder_check(self, path):
         response = requests.get("https://cloud-api.yandex.net/v1/disk/resources",
-            params={'path': path}, headers=self.headers)
+        params={'path': path}, headers=self.headers)
         return response.status_code
 
 token = "***************************************"
